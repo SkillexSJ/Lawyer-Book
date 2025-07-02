@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Ariful Hossain",
+    "image": "https://i.ibb.co/C0y3z6V/lawyer1.jpg",
+    "specialty": "Criminal Expert",
+    "experience": 12,
+    "license": "L-12345",
+    "fee": 500,
+    "availability": ["Sunday", "Tuesday", "Thursday"]
+  },
+  {
+    "id": 2,
+    "name": "Jannatul Ferdous",
+    "image": "https://i.ibb.co/hCKxJyb/lawyer2.jpg",
+    "specialty": "Family Law",
+    "experience": 8,
+    "license": "L-67890",
+    "fee": 450,
+    "availability": ["Monday", "Wednesday", "Friday"]
+  },
+  {
+    "id": 3,
+    "name": "Rahim Ahmed",
+    "image": "https://i.ibb.co/wJXCf2b/lawyer3.jpg",
+    "specialty": "Corporate Law",
+    "experience": 15,
+    "license": "L-11223",
+    "fee": 700,
+    "availability": ["Tuesday", "Thursday"]
+  },
+  {
+    "id": 4,
+    "name": "Sadia Islam",
+    "image": "https://i.ibb.co/k3SSGdP/lawyer4.jpg",
+    "specialty": "Immigration Law",
+    "experience": 7,
+    "license": "L-44556",
+    "fee": 400,
+    "availability": ["Monday", "Friday"]
+  },
+  {
+    "id": 5,
+    "name": "Kamal Uddin",
+    "image": "https://i.ibb.co/xMhVzNq/lawyer5.jpg",
+    "specialty": "Real Estate Law",
+    "experience": 20,
+    "license": "L-77889",
+    "fee": 800,
+    "availability": ["Sunday", "Wednesday"]
+  },
+  {
+    "id": 6,
+    "name": "Farah Khan",
+    "image": "https://i.ibb.co/G5nN7L9/lawyer6.jpg",
+    "specialty": "Intellectual Property",
+    "experience": 9,
+    "license": "L-99001",
+    "fee": 650,
+    "availability": ["Tuesday", "Wednesday", "Friday"]
+  },
+  {
+    "id": 7,
+    "name": "David Chen",
+    "image": "https://i.ibb.co/7vbf4XF/lawyer7.jpg",
+    "specialty": "Tax Law",
+    "experience": 18,
+    "license": "L-54321",
+    "fee": 750,
+    "availability": ["Monday", "Wednesday"]
+  },
+  {
+    "id": 8,
+    "name": "Maria Rodriguez",
+    "image": "https://i.ibb.co/yQWk4Yq/lawyer8.jpg",
+    "specialty": "Environmental Law",
+    "experience": 10,
+    "license": "L-98765",
+    "fee": 600,
+    "availability": ["Tuesday", "Friday"]
+  },
+  {
+    "id": 9,
+    "name": "Ben Carter",
+    "image": "https://i.ibb.co/zZ1yYvJ/lawyer9.jpg",
+    "specialty": "Personal Injury",
+    "experience": 14,
+    "license": "L-24680",
+    "fee": 550,
+    "availability": ["Sunday", "Thursday"]
+  },
+  {
+    "id": 10,
+    "name": "Aisha Patel",
+    "image": "https://i.ibb.co/GxpN6N8/lawyer10.jpg",
+    "specialty": "Bankruptcy Law",
+    "experience": 6,
+    "license": "L-13579",
+    "fee": 350,
+    "availability": ["Wednesday", "Friday"]
+  },
+  {
+    "id": 11,
+    "name": "Michael Lee",
+    "image": "https://i.ibb.co/1nQzJbZ/lawyer11.jpg",
+    "specialty": "Labor Law",
+    "experience": 11,
+    "license": "L-86420",
+    "fee": 480,
+    "availability": ["Monday", "Tuesday", "Thursday"]
+  },
+  {
+    "id": 12,
+    "name": "Sophia Williams",
+    "image": "https://i.ibb.co/8M0yZy6/lawyer12.jpg",
+    "specialty": "Medical Malpractice",
+    "experience": 22,
+    "license": "L-97531",
+    "fee": 900,
+    "availability": ["Sunday", "Wednesday", "Friday"]
+  }
+]
