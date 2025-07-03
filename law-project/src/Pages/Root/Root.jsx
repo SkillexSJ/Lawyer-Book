@@ -5,7 +5,7 @@ import Footer from "../../Components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 const Root = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto custom-font">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

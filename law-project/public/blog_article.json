@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "What is useState and how does it work in React?",
+    "content": "useState is a React Hook that lets you add state to functional components. When you call useState(initialValue), it returns a stateful value and a function to update it. The state persists between renders, and updating it triggers a re-render to reflect changes in the UI. It's useful for managing dynamic data inside a component."
+  },
+  {
+    "id": 2,
+    "title": "What is the purpose of useEffect in React?",
+    "content": "useEffect is a React Hook that lets you perform side effects in functional components, such as fetching data, setting up subscriptions, or manually changing the DOM. It runs after the render and can be configured to run only on specific state or prop changes by passing dependencies. It helps manage lifecycle events inside function components."
+  },
+  {
+    "id": 3,
+    "title": "What is a custom hook in React and when should you use one?",
+    "content": "A custom hook is a JavaScript function whose name starts with 'use' and that can call other hooks. It lets you extract component logic into reusable functions. Use custom hooks when you want to share logic (such as fetching data, form handling, or animations) across multiple components without duplicating code."
+  },
+  {
+    "id": 4,
+    "title": "Difference between controlled and uncontrolled components. Which one is better?",
+    "content": "Controlled components have their form data controlled by React state. You update state on every input change and React renders the UI based on that state. Uncontrolled components manage their own internal state using refs to access form values. Controlled components are generally preferred because they provide better control, validation, and predictability, while uncontrolled ones can be simpler for quick or simple forms."
+  },
+  {
+    "id": 5,
+    "title": "Tell us something about useFormStatus() in React.",
+    "content": "useFormStatus is a React hook (from React Router v6.4+) that provides information about the status of a form submission, such as whether the form is currently submitting, or if there was an error. It helps manage form UI states like disabling buttons while submitting or showing loading indicators."
+  }
+]

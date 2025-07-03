@@ -3,16 +3,24 @@ import Root from "../Pages/Root/Root";
 import Home from "../Pages/Home/Home";
 import LawyerDetails from "../Pages/LawyerDetails/LawyerDetails";
 import Bookings from "../Pages/Bookings/Bookings";
+import Blogs from "../Pages/Blogs/Blogs";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement: <ErrorPage></ErrorPage>,
 
     children: [
       {
         index: true, // home page er jonno
-        loader: () => fetch("lawyer_details.json"),
+
+        loader: async () => {
+          const res = await fetch("/lawyer_details.json");
+          return res.json();
+        },
+
         path: "/",
         Component: Home,
       },
@@ -36,6 +44,16 @@ export const router = createBrowserRouter([
         path: "/Bookings",
         loader: () => fetch("lawyer_details.json"),
         Component: Bookings,
+      },
+
+      {
+        path: "/blogs",
+        loader: async () => {
+          const res = await fetch("blog_article.json");
+          return res.json();
+        },
+
+        Component: Blogs,
       },
     ],
   },

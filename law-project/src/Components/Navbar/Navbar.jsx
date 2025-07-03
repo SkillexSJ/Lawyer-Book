@@ -13,7 +13,7 @@ const Navbar = () => {
         {" "}
         <li className="mr-2">My-Bookings</li>
       </Link>
-      <Link to="/">
+      <Link to="/blogs">
         {" "}
         <li className="mr-2">Blogs</li>
       </Link>
@@ -47,14 +47,17 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {Links}
             </ul>
           </div>
           <div>
             <div className="flex gap-2 items-center">
-              <img src={logoHead} alt="" />
+              <Link to="/">
+                <img src={logoHead} alt="" />
+              </Link>
+
               <a className="text-xl font-bold">Law.BD</a>
             </div>
 
@@ -67,7 +70,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 flex gap-4">{Links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-primary">Button</a>
+          <a className=" btn btn-neutral bg-[#0EA106] rounded-lg border-none">
+            Contact Now
+          </a>
         </div>
       </div>
     </div>

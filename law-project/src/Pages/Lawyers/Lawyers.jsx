@@ -5,10 +5,16 @@ import justice from "../../assets/success-patients.png";
 import review from "../../assets/success-review.png";
 import staff from "../../assets/success-staffs.png";
 import CountUp from "react-countup";
+import { useLoaderData } from "react-router";
 
-const Lawyers = ({ data }) => {
+const Lawyers = () => {
+  const data = useLoaderData();
   const [showAll, setShowAll] = useState(false);
-  const displayLawyers = showAll ? data : data.slice(0, 6);
+  const displayLawyers = Array.isArray(data)
+    ? showAll
+      ? data
+      : data.slice(0, 6)
+    : [];
   return (
     <>
       {/* lawyer portfolio */}
@@ -31,10 +37,10 @@ const Lawyers = ({ data }) => {
           </div>
         </div>
 
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-2 ">
           <button
             onClick={() => setShowAll(true)}
-            className="btn btn-primary bg-[#0EA106] p-8 text-2xl rounded-2xl mt-5"
+            className="btn btn-primary bg-[#0EA106] p-8 text-2xl rounded-2xl border-none mt-5"
           >
             {" "}
             Show All Lawyer
@@ -42,8 +48,8 @@ const Lawyers = ({ data }) => {
         </div>
       </div>
       {/* success section */}
-      <div className="mb-20">
-        <div className="flex flex-col items-center justify-center text-center mt-60 mb-10">
+      <div className="mb-20 ">
+        <div className="flex flex-col items-center justify-center text-center mt-20 mb-10">
           <h1 className="font-bold text-4xl">We Provide Best Law Services</h1>
           <p>
             Our platform connects you with verified, experienced Lawyers across

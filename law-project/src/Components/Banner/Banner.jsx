@@ -11,14 +11,17 @@ const Banner = () => {
     >
       <div className="hero-overlay bg-opacity-70 rounded-3xl"></div>
       <div className="hero-content text-neutral-content text-center">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-          <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+        <div>
+          <div className=" flex gap-3 mb-5 text-7xl w-full font-bold text-center text-">
+            Our Best{" "}
+            <span>
+              La<span className="text-green-500">w</span>yers
+            </span>
+          </div>
+          <p className=" text-center">
+            "Your Legal Journey Begins Here" <br /> Find verified lawyers for
+            any legal issue — anytime, anywhere.
           </p>
-          <button className="btn btn-primary">Get Started</button>
         </div>
       </div>
     </div>

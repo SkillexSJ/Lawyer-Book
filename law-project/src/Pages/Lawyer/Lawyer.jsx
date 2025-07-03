@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import { SiUnlicense } from "react-icons/si";
 
 const Lawyer = ({ lawyer }) => {
   const { id, name, image, specialty, experience, license } = lawyer;
@@ -14,15 +15,20 @@ const Lawyer = ({ lawyer }) => {
           {/* details section 3ta div */}
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <h3 className="bg-green-200 text-green-400 p-2 rounded-sm">
+              <h3 className="bg-green-200 text-green-500 p-2 rounded-2xl">
                 Available
               </h3>
-              <h3 className="bg-[#76a7f1] p-2 rounded-sm">{experience}</h3>
+              <h3 className="bg-[#b0ccf5] p-2 rounded-2xl text-blue-500">
+                {experience} Year+ Experience
+              </h3>
             </div>
             <div className="flex flex-col mt-2 gap-1">
               <h1 className="text-3xl font-bold">{name}</h1>
-              <h2 className="text-gray-300">{specialty}</h2>
-              <h2>{license}</h2>
+              <h2 className="text-gray-500">{specialty}</h2>
+              <div className="flex gap-2 items-center text-gray-500">
+                <SiUnlicense />
+                <h2>License No: {license}</h2>
+              </div>
             </div>
             <div>
               <Link to={`/lawyerDetails/${id}`}>
